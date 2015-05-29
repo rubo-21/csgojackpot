@@ -1,0 +1,22 @@
+{
+  "name": "csgojackpot",
+  "version": "0.0.1",
+  "authors": [
+    "rubo-21 <rubenyeghikyan@gmail.com>"
+  ],
+  "description": "csgojackpot website",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "dist",
+    "src/vendor"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

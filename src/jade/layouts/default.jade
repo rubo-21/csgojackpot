@@ -1,0 +1,22 @@
+include ../helpers/variables
+include ../helpers/mixins
+
+doctype html
+html(lang='en')
+	include ../partials/head
+	body
+		block body
+		if isHome
+			.main.b-home-page.js-home-page-main
+				include ../partials/header
+				block content
+				include ../partials/footer
+
+			include ../partials/scripts
+		else
+			.main
+				include ../partials/header
+				block content
+				include ../partials/footer
+
+			include ../partials/scripts
