@@ -1,0 +1,51 @@
+.b-header
+	position fixed
+	top 0
+	right 0
+	left 0
+	width 100%
+	min-height 40px
+	padding 0 15px
+	clearfix()
+	z-index 100
+	overflow hidden
+	background #373737
+	border-color #EEE
+	border-width 0 0 1px
+	color #fff
+	&__logo
+		height 54px
+		float left
+		&:hover
+			cursor pointer
+			opacity .7
+		& a
+			height 40px
+			padding 11px 15px
+		& img
+			display block
+			height 40px
+			margin-top -12px
+	&__nav
+		float right
+		& ul
+			list-style none
+		&-item
+			position relative
+			display inline-block
+			& img
+				vertical-align middle
+			& a
+			& a:link
+			& a:visited
+			& a:hover
+			& a:active
+				display block
+				height 54px
+				padding 10px 15px
+				line-height 29px
+				text-decoration none
+				font-size 13px
+				color #fff
+			& a:hover
+				background #cc4748

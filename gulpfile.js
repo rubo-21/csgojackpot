@@ -50,7 +50,7 @@ gulp.task('js', function () {
 
 gulp.task('jade', function () {
 	gulp.src('./views/*.html', {read: false}).pipe(clean());
-	gulp.src(paths.src + 'jade/pages/*.jade')
+	gulp.src(paths.src + 'jade/static/*.jade')
 	.pipe(jade({ pretty: true }))
 	.pipe(gulp.dest('./views/'));
 });

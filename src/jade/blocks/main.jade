@@ -1,0 +1,29 @@
+.b-main
+	.b-main__links-block
+		a.b-main__login-button.b-main__links(href="/auth/steam") Login to Deposit
+		.b-main__analyst-backlink.b-main__links.b-main__link-block
+			a(href="http://csgo.steamanalyst.com/?ref=csgojackpot", target="_blank")
+				| Pricings provided by:
+				br
+				img(src="img/logo-analyst.gif")
+		.b-main__opskins.b-main__links.b-main__link-block
+			a(href="http://opskins.com/?ref=csgojackpot", target="_blank")
+				| Buy and Sell skins at:
+				br
+				img(src="img/logo-opskins.png")
+	.b-main__content
+		.b-main__feed-area
+			.b-main__alert
+				if(user)
+					h1= user.identifier
+				else
+					h1 text
+				| You have deposited &#160;
+				b.js-deposited-total-skins 0 skins &#160;
+				| on the current round (Probability to win: &#160;
+				b.js-winning-percentage 0%
+				| )
+				br
+				.b-main__queue-message You are not currently standing in queue.
+			.b-main__activity-status
+		.b-main__knob-area
