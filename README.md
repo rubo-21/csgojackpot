@@ -23,8 +23,8 @@ $ npm i -g bower
 ```
 
 ```sh
-$ git clone [git-repo-url] In-Pro
-$ cd In-Pro
+$ git clone [git-repo-url] csgojackpot
+$ cd csgojackpot
 $ npm i
 $ bower i
 ```
